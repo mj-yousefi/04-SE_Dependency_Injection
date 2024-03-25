@@ -7,7 +7,6 @@ from abc import ABC, abstractmethod
 
 class UserRepository(ABC):
 
-    # source can be ''
 
     def __init__(self, source: str = 'all') -> None:
         """init function.
@@ -44,7 +43,6 @@ class UserRepository(ABC):
 
 class DbUserRepository(UserRepository):
 
-    # source can be ''
     def __init__(self, source: str = 'all') -> None:
         super(DbUserRepository, self).__init__(source=source)
 
@@ -89,7 +87,6 @@ class DbUserRepository(UserRepository):
 
 class FileUserRepository(UserRepository):
 
-    # source can be ''
     def __init__(self, source: str = 'all') -> None:
         super(FileUserRepository, self).__init__(source=source)
 

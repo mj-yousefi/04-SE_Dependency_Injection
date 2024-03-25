@@ -3,10 +3,10 @@ from user import User
 from conifg import CUSTOMER_MIN_ORDER_COUNT, LUX_MIN_PURCHASE_AMOUNT
 
 
-class UserSegmentation:
+class UserSegmenttion:
 
     def segment_users(self) -> dict[str, list[User]]:
-        user_repo = DbUserRepository()
+        user_repo = DbUserRepository(source='all')
         users = user_repo.get_users()
 
         segments = {}

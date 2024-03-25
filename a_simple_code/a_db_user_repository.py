@@ -4,7 +4,6 @@ import random
 
 class DbUserRepository:
 
-    # source can be ''
     def __init__(self, source: str = 'all') -> None:
         """init function.
 
